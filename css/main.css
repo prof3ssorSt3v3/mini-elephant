@@ -1,0 +1,53 @@
+:root {
+  --primary: hsl(210 50% 80% / 1);
+  --onPrimary: hsl(210 50% 30% / 1);
+
+  --ff-body: Montserrat, sans-serif;
+  --ff-special: 'Lavishly Yours', cursive;
+
+  --fluid: progress(100vw, 500px, 1200px);
+  /* 
+  Between 500px and 1200px we get a value between 0 and 1.
+  Above or below it will only be zero or one.
+  This value can be multiplied by some value to calculate the dynamic size
+  Kevin Powell video about progress() - https://www.youtube.com/watch?v=bLB90QwRki4
+  */
+  --basefs: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+  font-size: calc(var(--basefs) + var(--fluid) * 1rem);
+  font-weight: 300;
+  font-family: var(--ff-body);
+  line-height: 1.5;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+
+  h1 {
+    color: var(--onPrimary);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1;
+    /* font-family: var(--ff-body); */
+    text-box: trim-both cap alphabetic;
+    margin: 0;
+    padding-block: 1lh;
+
+    span {
+      font-family: var(--ff-special);
+      font-size: 200%;
+    }
+  }
+}
