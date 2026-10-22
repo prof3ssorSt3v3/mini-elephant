@@ -19,12 +19,72 @@
           <caption>
             Movie Time
           </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;&nbsp;&nbsp;</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Morning</th>
+              <td>Alien</td>
+              <td>Alien Prometheus</td>
+              <td>Alien Covenant</td>
+              <td>Alien Romulus</td>
+              <td>Wall-E</td>
+            </tr>
+            <tr>
+              <th>Afternoon</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Evening</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </section>
       <section class="collection">
-        <form action="#">
+        <form action="https://www.google.ca/">
           <fieldset>
             <legend>Gimme Some Data</legend>
+            <div class="formbox">
+              <label for="fullname">Name</label>
+              <input id="fullname" name="fullname" value="" placeholder="do you know your name?" class="input--lg" type="text" required />
+            </div>
+            <div class="formbox">
+              <label for="email">Email</label>
+              <input id="email" name="email" value="" placeholder="do you know your email?" class="input--lg" type="email" required />
+            </div>
+            <div class="formbox">
+              <label for="spam">Gimme Spam!</label>
+              <input type="checkbox" checked id="spam" name="spam" value="yes" />
+            </div>
+            <div class="formbox">
+              <label for="province">Province</label>
+              <select id="province" name="province" class="input--lg">
+                <option value="ON">Ontario</option>
+                <option value="QC">Quebec</option>
+                <option value="YK">Yukon</option>
+              </select>
+            </div>
+            <div class="formbox">
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" class="input--lg"></textarea>
+            </div>
           </fieldset>
         </form>
       </section>
